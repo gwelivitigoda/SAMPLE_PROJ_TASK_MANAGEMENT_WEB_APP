@@ -1,0 +1,96 @@
+Title,Description,Acceptance Criteria,Labels,Column
+US01 - User Signup,"As a new user, I want to sign up so I can create an account and log in.","Given I am a new user
+When I sign up with my email and password
+Then my account is created
+And I can log in using these credentials","High Priority, Feature",Backlog
+US02 - User Login,"As a registered user, I want to log in to access my tasks.","Given I am a registered user
+When I enter my email and password
+Then I am logged into my account
+And I see my task dashboard","High Priority, Feature",Backlog
+US03 - Reset Password,"As a registered user, I want to reset my password if forgotten.","Given I am a registered user
+When I request a password reset
+And provide my email
+Then I receive a reset link
+And I can set a new password","Medium Priority, Feature",Backlog
+US04 - Edit Profile,"As a logged-in user, I want to update my profile information.","Given I am logged in
+When I update my profile information (name, email, avatar)
+Then my profile is updated
+And the new details are displayed in my account","Medium Priority, Feature",Backlog
+US05 - Delete Account,"As a logged-in user, I want to delete my account permanently.","Given I am logged in
+When I choose to delete my account
+Then my account and tasks are permanently removed
+And I cannot log in again","Low Priority, Feature",Backlog
+US06 - Create Task,"As a user, I want to create a task with title and description.","Given I am logged in
+When I submit task details (title, description)
+Then the task is added to my task list
+And it appears in the ""To Do"" column on the Kanban board","High Priority, Feature",Backlog
+US07 - Assign Task,"As a user, I want to assign tasks to users.","Given I have created a task
+When I assign it to a user
+Then that user is notified
+And the task shows their name as the assignee","High Priority, Feature",Backlog
+US08 - Set Task Priority,"As a user, I want to set priority for tasks.","Given I have a task
+When I set a priority (High/Medium/Low)
+Then the task displays the priority
+And it can be filtered accordingly","High Priority, Feature",Backlog
+US09 - Set Task Deadline,"As a user, I want to set deadlines for tasks.","Given I have a task
+When I set a deadline
+Then the task displays the due date
+And I receive reminders before the deadline","Medium Priority, Feature",Backlog
+US10 - Edit Task,"As a user, I want to edit task details.","Given I have a task
+When I update its details (title, description, priority, deadline)
+Then the task is updated
+And changes are reflected on the Kanban board","Medium Priority, Feature",Backlog
+US11 - Delete Task,"As a user, I want to delete a task.","Given I have a task
+When I choose to delete it
+Then the task is removed from the Kanban board
+And it cannot be accessed again","Medium Priority, Feature",Backlog
+US12 - Mark Task as Complete,"As a user, I want to mark tasks as done.","Given a task is in progress
+When I mark it as done
+Then the task moves to the ""Done"" column
+And is counted in completed tasks","High Priority, Feature",Backlog
+US13 - Duplicate Task Prevention,"As a user, I want to prevent duplicate tasks.","Given I try to create a task with the same title
+When I submit the task
+Then a warning is displayed
+And the task is not duplicated","Medium Priority, Feature",Backlog
+US14 - Move Task Across Columns,"As a user, I want to move tasks between columns.","Given a task is in ""To Do""
+When I drag it to ""In Progress"" or ""Done""
+Then the task status is updated
+And its position is reflected on the board","High Priority, Feature",Backlog
+US15 - Filter Tasks by Priority,"As a user, I want to filter tasks by priority.","Given tasks have priority levels
+When I apply a filter
+Then only tasks matching the selected priority are displayed","Medium Priority, Feature",Backlog
+US16 - Filter Tasks by Assignee,"As a user, I want to filter tasks by assignee.","Given tasks are assigned to users
+When I filter by a user
+Then only tasks assigned to that user are displayed","Medium Priority, Feature",Backlog
+US17 - Search Tasks,"As a user, I want to search tasks by title or keyword.","Given multiple tasks exist
+When I search by title or keyword
+Then matching tasks are displayed
+And irrelevant tasks are hidden","Medium Priority, Feature",Backlog
+US18 - Highlight Overdue Tasks,"As a user, I want overdue tasks to be highlighted.","Given tasks have deadlines
+When a task passes its deadline
+Then it is highlighted in red
+And I can identify overdue tasks quickly","Medium Priority, Feature",Backlog
+US19 - Sort Tasks by Deadline,"As a user, I want to sort tasks by deadline.","Given tasks have deadlines
+When I choose to sort by deadline
+Then tasks are arranged from earliest to latest","Low Priority, Feature",Backlog
+US20 - Dashboard Task Counts,"As a user, I want to see counts of tasks by status.","Given multiple tasks exist
+When I view the dashboard
+Then I see total tasks by status (To Do, In Progress, Done)","High Priority, Feature",Backlog
+US21 - Task Completion Metrics,"As a user, I want to see completed tasks over time.","Given completed tasks exist
+When I view the dashboard chart
+Then I see a visual representation of tasks completed over time","Low Priority, Feature",Backlog
+US22 - Deadline Notifications,"As a user, I want notifications for approaching deadlines.","Given a task has a deadline
+When the deadline is near
+Then I receive a notification
+And I can take action to complete it on time","Medium Priority, Feature",Backlog
+US23 - Activity Log,"As a user, I want an activity log for task updates.","Given tasks are updated
+When I view the activity log
+Then I see a record of task creation, updates, and completion","Low Priority, Feature",Backlog
+US24 - Export Tasks,"As a user, I want to export tasks as CSV.","Given multiple tasks exist
+When I export tasks
+Then they are downloaded as a CSV file
+And include all task details","Low Priority, Feature",Backlog
+US25 - Multi-User Collaboration,"As a user, I want to collaborate on tasks with multiple users.","Given multiple users are assigned tasks
+When I view tasks on the board
+Then I can see all users' tasks
+And collaborate effectively","Medium Priority, Feature",Backlog
